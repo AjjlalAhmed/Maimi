@@ -1,0 +1,17 @@
+// At-rule style
+@import "at-rule";
+#container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    // Hero style 
+    @import "hero";
+    // Main style 
+    @import "main";
+    // Footer style 
+    @import "footer";
+
+    // MediaQuery allways goes on last line 
+    // MediaQuery style 
+    @import "mediaQuery";
+}

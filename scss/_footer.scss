@@ -1,0 +1,29 @@
+#footer{
+    @include grid-position(#{1 / 2},#{3 / 4});
+    background: url("../images/footer-img_02.jpg") no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    background-position: center;
+    .footer-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        min-height: 60vh;
+        .footer-logo{
+            @include grid-position(#{1 / 2},#{1 / 2});
+            justify-self: center;
+            align-self: center;
+        }
+        .copy-right{
+            @include grid-position(#{1 / 2},#{2 / 3});
+            justify-self: center;
+            align-self: center;
+            P{
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                color: $white;
+            }
+        }
+    }
+}
