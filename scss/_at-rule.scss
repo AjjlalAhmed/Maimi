@@ -1,20 +1,23 @@
-html{
+html {
     scroll-behavior: smooth;
 }
+
 // Google font 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
 // Variable 
 $primary-color:#00aaef;
 $white:#fff;
 $black:#000;
 // Mixin 
-@mixin grid-position($column,$row) {
-    grid-column:$column ;
+@mixin grid-position($column,
+$row) {
+    grid-column: $column;
     grid-row: $row;
 }

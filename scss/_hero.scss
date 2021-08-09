@@ -1,55 +1,58 @@
-#hero{
-    @include grid-position(#{1 / 2},#{1 / 2});
+#hero {
+    @include grid-position(#{1 / 2}, #{1 / 2});
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    background: url("../images/slide-img_01.png");
+    background: url("../images/pexels-sanaan-mazhar-3075993-compressed.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
     background-position: bottom;
-    header{
-        @include grid-position(#{1 / 2},#{1 / 2});
-        ul{
+    box-shadow: inset 999px 999px 999px rgba(0, 0, 0, .5);
+    header {
+        @include grid-position(#{1 / 2},
+        #{1 / 2});
+        ul {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: auto;
             margin-top: 100px;
-            li{
+            li {
                 list-style: none;
                 justify-self: center;
                 align-self: center;
-                a{
+                a {
                     text-decoration: none;
-                    color: #999;
-                    text-transform: uppercase;
-                    font-size: 1.1rem;
-                    font-weight: 600;
-                   
+                    color: $primary-color;
+                    text-transform: capitalize;
+                    font-size: 1.2rem;
+                    font-weight: 500;
                 }
             }
         }
     }
-    .showcase{
-        @include grid-position(#{1 / 2},#{2 / 3});
+    .showcase {
+        @include grid-position(#{1 / 2},
+        #{2 / 3});
         align-self: end;
         padding: 50px 0px;
-        #nav-bar{
+        #nav-bar {
             text-align: center;
             transition: 2s ease;
-            ul{
-                li{
+            ul {
+                li {
                     list-style: none;
                     padding: 20px 40px;
                     display: inline-block;
-                    a{
+                    a {
                         text-decoration: none;
                         color: $white;
                         font-size: 1.1rem;
-                        font-weight: 500;
-                        text-transform: uppercase;
+                        font-weight: 300;
+                        text-transform: capitalize;
                         transition: .3s linear;
-                        &:hover{
+                        letter-spacing: 1px;
+                        &:hover {
                             color: $primary-color;
                         }
                     }
@@ -57,7 +60,7 @@
             }
         }
     }
-    .burger-menu{
+    .burger-menu {
         display: none;
     }
 }
